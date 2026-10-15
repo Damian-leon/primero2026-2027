@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="2tmL-4Wttb698EKcTmYo">
+    <mxGraphModel dx="1899" dy="1047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mR-x655w8CqlAopyvcRN-2" edge="1" parent="1" source="mR-x655w8CqlAopyvcRN-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mR-x655w8CqlAopyvcRN-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;inicio&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-6" edge="1" parent="1" source="mR-x655w8CqlAopyvcRN-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mR-x655w8CqlAopyvcRN-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GB_POR_MB = 1024" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-9" edge="1" parent="1" source="mR-x655w8CqlAopyvcRN-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mR-x655w8CqlAopyvcRN-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;p class=&quot;MsoNormal&quot;&gt;Leer cantidad_documentos&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer tamaño_documentos&lt;span style=&quot;text-decoration-line: inherit; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer cantidad_imagenes&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer tamaño_imagenes&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer cantidad_videos&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer tamaño_videos&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer cantidad_programas&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer tamaño_programas&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Leer capacidad_disco_GB&lt;/p&gt;" vertex="1">
+          <mxGeometry height="280" width="275" x="282.5" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-11" edge="1" parent="1" source="mR-x655w8CqlAopyvcRN-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mR-x655w8CqlAopyvcRN-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p class=&quot;MsoNormal&quot;&gt;espacio_documentos = cantidad_documentos × tamaño_documentos&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;espacio_imagenes = cantidad_imagenes × tamaño_imagenes&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;espacio_videos = cantidad_videos × tamaño_videos&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;espacio_programas = cantidad_programas × tamaño_programas&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;total_MB = espacio_documentos + espacio_imagenes +&lt;br&gt;espacio_videos + espacio_programas&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;total_GB = total_MB / 1024&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;porcentaje = (total_GB / capacidad_disco_GB) × 100&lt;/p&gt;" vertex="1">
+          <mxGeometry height="200" width="410" x="215" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-14" edge="1" parent="1" source="mR-x655w8CqlAopyvcRN-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mR-x655w8CqlAopyvcRN-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-10" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Presentar&quot;Este es el espacio total de todos los archivos en mb&quot; +total_MB +&quot;Este es el espacio total en GB&quot; +total_GB +&quot;Este es el porcentaje del espacio del disco usado&quot; +porcentaje" vertex="1">
+          <mxGeometry height="180" width="315" x="262.5" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="mR-x655w8CqlAopyvcRN-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="fin" vertex="1">
+          <mxGeometry height="80" width="80" x="380" y="970" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
