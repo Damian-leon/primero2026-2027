@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="BHCpcMvh3D_kA5OYOo5S">
-    <mxGraphModel dx="1500" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1250" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,19 +8,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AL4cz9z9DROTQ_oCYajX-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="inicio&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="100" x="360.02" y="180" as="geometry" />
+          <mxGeometry height="60" width="100" x="359.99" y="110" as="geometry" />
         </mxCell>
         <mxCell id="AL4cz9z9DROTQ_oCYajX-5" edge="1" parent="1" source="AL4cz9z9DROTQ_oCYajX-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="AL4cz9z9DROTQ_oCYajX-4" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AL4cz9z9DROTQ_oCYajX-2" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;span lang=&quot;es-419&quot; style=&quot;font-family: &amp;quot;Segoe UI&amp;quot;, sans-serif;&quot;&gt;&lt;font&gt;total = 0.0&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span lang=&quot;es-419&quot; style=&quot;font-family: &amp;quot;Segoe UI&amp;quot;, sans-serif;&quot;&gt;&lt;font&gt;&amp;nbsp;parte = 0.0&lt;br&gt;cubo = 0.0&lt;br&gt;porcentaje = 0.0&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="200" x="309.99" y="260" as="geometry" />
+          <mxGeometry height="70" width="200" x="309.99" y="190" as="geometry" />
         </mxCell>
-        <mxCell id="AL4cz9z9DROTQ_oCYajX-7" edge="1" parent="1" source="AL4cz9z9DROTQ_oCYajX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="AL4cz9z9DROTQ_oCYajX-6" value="">
+        <mxCell id="J5UDhQbfrLsOIBN_bYBE-2" edge="1" parent="1" source="AL4cz9z9DROTQ_oCYajX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="J5UDhQbfrLsOIBN_bYBE-1" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AL4cz9z9DROTQ_oCYajX-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="presentar(&quot;Ingrese la cantidad total&quot;)&lt;br&gt;leer total" vertex="1">
-          <mxGeometry height="60" width="250" x="284.99" y="350" as="geometry" />
+          <mxGeometry height="50" width="250" x="284.99" y="280" as="geometry" />
         </mxCell>
         <mxCell id="AL4cz9z9DROTQ_oCYajX-17" edge="1" parent="1" source="AL4cz9z9DROTQ_oCYajX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="AL4cz9z9DROTQ_oCYajX-16" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -86,6 +86,12 @@
         </mxCell>
         <mxCell id="AL4cz9z9DROTQ_oCYajX-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="fin" vertex="1">
           <mxGeometry height="50" width="78.01" x="371.99" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="J5UDhQbfrLsOIBN_bYBE-5" edge="1" parent="1" source="J5UDhQbfrLsOIBN_bYBE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="AL4cz9z9DROTQ_oCYajX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J5UDhQbfrLsOIBN_bYBE-1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;div&gt;presentar(&quot;Ingrese la parte&quot;)&lt;br&gt;leer parte&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="230.01" x="294.98" y="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
