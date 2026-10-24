@@ -5,28 +5,28 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
-          <mxGeometry height="50" width="180" x="250" y="20" as="geometry" />
+          <mxGeometry height="50" width="180" x="250" y="120" as="geometry" />
         </mxCell>
         <mxCell id="init" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="promedio = 0&lt;br&gt;porcentaje = 0" vertex="1">
-          <mxGeometry height="60" width="300" x="190" y="100" as="geometry" />
+          <mxGeometry height="60" width="300" x="190" y="190" as="geometry" />
         </mxCell>
         <mxCell id="l1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese z:&quot;)&lt;br&gt;Leer z" vertex="1">
-          <mxGeometry height="50" width="300" x="190" y="190" as="geometry" />
-        </mxCell>
-        <mxCell id="l2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese v:&quot;)&lt;br&gt;Leer v" vertex="1">
           <mxGeometry height="50" width="300" x="190" y="270" as="geometry" />
         </mxCell>
+        <mxCell id="l2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese v:&quot;)&lt;br&gt;Leer v" vertex="1">
+          <mxGeometry height="50" width="300" x="190" y="340" as="geometry" />
+        </mxCell>
         <mxCell id="l3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese dato1:&quot;)&lt;br&gt;Leer dato1" vertex="1">
-          <mxGeometry height="50" width="300" x="190" y="350" as="geometry" />
+          <mxGeometry height="38" width="300" x="190" y="410" as="geometry" />
         </mxCell>
         <mxCell id="prom" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="promedio = (z + v + dato1) / 3" vertex="1">
-          <mxGeometry height="44" width="360" x="160" y="430" as="geometry" />
+          <mxGeometry height="38" width="360" x="160" y="466" as="geometry" />
         </mxCell>
         <mxCell id="bool" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="promedio_positivo = (promedio &gt; 0)" vertex="1">
-          <mxGeometry height="44" width="360" x="160" y="504" as="geometry" />
+          <mxGeometry height="38" width="360" x="160" y="526" as="geometry" />
         </mxCell>
-        <mxCell id="pprom" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;El promedio es: &quot; + promedio)" vertex="1">
-          <mxGeometry height="50" width="300" x="190" y="578" as="geometry" />
+        <mxCell id="pprom" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07500000000000001;" value="Presentar(&quot;El promedio es: &quot; + promedio)" vertex="1">
+          <mxGeometry height="38" width="300" x="190" y="590" as="geometry" />
         </mxCell>
         <mxCell id="d" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="SI promedio_positivo" vertex="1">
           <mxGeometry height="80" width="180" x="250" y="658" as="geometry" />
