@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="ferreteria" name="Promedio de tres enteros">
+    <mxGraphModel dx="2603" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="50" width="180" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="promedio = 0&lt;br&gt;porcentaje = 0" vertex="1">
+          <mxGeometry height="60" width="300" x="190" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese z:&quot;)&lt;br&gt;Leer z" vertex="1">
+          <mxGeometry height="50" width="300" x="190" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese v:&quot;)&lt;br&gt;Leer v" vertex="1">
+          <mxGeometry height="50" width="300" x="190" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese dato1:&quot;)&lt;br&gt;Leer dato1" vertex="1">
+          <mxGeometry height="50" width="300" x="190" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="prom" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="promedio = (z + v + dato1) / 3" vertex="1">
+          <mxGeometry height="44" width="360" x="160" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="bool" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="promedio_positivo = (promedio &gt; 0)" vertex="1">
+          <mxGeometry height="44" width="360" x="160" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="pprom" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;El promedio es: &quot; + promedio)" vertex="1">
+          <mxGeometry height="50" width="300" x="190" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="d" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="SI promedio_positivo" vertex="1">
+          <mxGeometry height="80" width="180" x="250" y="658" as="geometry" />
+        </mxCell>
+        <mxCell id="porc" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="porcentaje = promedio / REFERENCIA * 100" vertex="1">
+          <mxGeometry height="50" width="200" x="10" y="673" as="geometry" />
+        </mxCell>
+        <mxCell id="pporc" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07500000000000001;" value="Presentar(&quot;El promedio es el &quot; + porcentaje + &quot;% del valor de referencia.&quot;)" vertex="1">
+          <mxGeometry height="90" width="300" x="-40" y="753" as="geometry" />
+        </mxCell>
+        <mxCell id="pno" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.06428571428571428;" value="Presentar(&quot;El promedio no es positivo: no se calcula el porcentaje.&quot;)" vertex="1">
+          <mxGeometry height="90" width="350" x="470" y="653" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="50" width="180" x="250" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ini_init" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_init_l1" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_l1_l2" edge="1" parent="1" source="l1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_l2_l3" edge="1" parent="1" source="l2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_l3_prom" edge="1" parent="1" source="l3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="prom" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_prom_bool" edge="1" parent="1" source="prom" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="bool" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_bool_pprom" edge="1" parent="1" source="bool" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pprom" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pprom_d" edge="1" parent="1" source="pprom" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_porc_pporc" edge="1" parent="1" source="porc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pporc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_m_pfin" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="890" as="sourcePoint" />
+            <mxPoint x="340" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="es" edge="1" parent="1" source="d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="porc" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="en" edge="1" parent="1" source="d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="pno" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pporc_m" edge="1" parent="1" source="pporc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="890" />
+            </Array>
+            <mxPoint x="335" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pno_m" edge="1" parent="1" source="pno" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0303" as="geometry">
+            <Array as="points">
+              <mxPoint x="575" y="890" />
+            </Array>
+            <mxPoint x="330" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
