@@ -28,23 +28,29 @@
         <mxCell id="p1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07500000000000001;" value="Presentar(soles + &quot; soles equivalen a &quot; + dolares_redondeado + &quot; dólares&quot;)" vertex="1">
           <mxGeometry height="100" width="275" x="-27.5" y="517" as="geometry" />
         </mxCell>
+        <mxCell id="l5wTf37-684H_L3DAcrD-1" edge="1" parent="1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="concl" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="p2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.11249999999999999;" value="Presentar(&quot;Valor exacto antes de redondear: &quot; + dolares + &quot; dólares&quot;)" vertex="1">
           <mxGeometry height="90" width="240" x="-10" y="647" as="geometry" />
+        </mxCell>
+        <mxCell id="l5wTf37-684H_L3DAcrD-3" edge="1" parent="1" source="perr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="c2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="perr" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07142857142857142;" value="Presentar(&quot;Error: el monto debe ser mayor que cero.&quot;)" vertex="1">
           <mxGeometry height="60" width="240" x="470" y="432" as="geometry" />
         </mxCell>
-        <mxCell id="concl" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.0661764705882353;" value="Presentar(&quot;--- CONCLUSIONES ---&quot;)&lt;br&gt;Presentar(&quot;Monto ingresado: &quot; + soles + &quot; soles&quot;)&lt;br&gt;Presentar(&quot;Tasa de cambio usada: &quot; + TASA_CAMBIO)" vertex="1">
-          <mxGeometry height="80" width="350" x="165" y="810" as="geometry" />
+        <mxCell id="l5wTf37-684H_L3DAcrD-2" edge="1" parent="1" source="concl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="c1" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="d2" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="dolares_positivo?" vertex="1">
-          <mxGeometry height="80" width="180" x="250" y="920" as="geometry" />
+        <mxCell id="concl" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.0661764705882353;" value="Presentar(&quot;CONCLUSIONES&quot;)&lt;br&gt;Presentar(&quot;Monto ingresado: &quot; + soles + &quot; soles&quot;)&lt;br&gt;Presentar(&quot;Tasa de cambio usada: &quot; + TASA_CAMBIO)" vertex="1">
+          <mxGeometry height="80" width="350" x="-65" y="760" as="geometry" />
         </mxCell>
         <mxCell id="c1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.11249999999999999;" value="Presentar(&quot;Conversión realizada: &quot; + dolares_redondeado + &quot; dólares&quot;)" vertex="1">
-          <mxGeometry height="70" width="260" x="-50" y="925" as="geometry" />
+          <mxGeometry height="70" width="260" x="-20" y="870" as="geometry" />
         </mxCell>
         <mxCell id="c2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07758620689655173;" value="Presentar(&quot;No se realizó la conversión porque el monto no es positivo.&quot;)" vertex="1">
-          <mxGeometry height="80" width="320" x="470" y="920" as="geometry" />
+          <mxGeometry height="80" width="320" x="430" y="920" as="geometry" />
         </mxCell>
         <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
           <mxGeometry height="50" width="180" x="250" y="1070" as="geometry" />
@@ -70,14 +76,6 @@
         <mxCell id="e_p1_p2" edge="1" parent="1" source="p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p2" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_m1_concl" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="concl" value="">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="780" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e_concl_d2" edge="1" parent="1" source="concl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d2" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="e_m2_fin" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="340" y="1040" as="sourcePoint" />
@@ -90,32 +88,6 @@
         </mxCell>
         <mxCell id="n1" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="perr" value="no">
           <mxGeometry relative="1" x="-0.1765" y="12" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="j1" edge="1" parent="1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;endArrow=none;" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="110" y="780" />
-            </Array>
-            <mxPoint x="335" y="780" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="j2" edge="1" parent="1" source="perr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
-          <mxGeometry relative="1" x="-0.0255" as="geometry">
-            <Array as="points">
-              <mxPoint x="575" y="780" />
-            </Array>
-            <mxPoint x="330" y="780" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="s2" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="c1" value="si">
-          <mxGeometry relative="1" x="-0.3333" y="-10" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="n2" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="c2" value="no">
-          <mxGeometry relative="1" x="-0.0164" y="10" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
