@@ -1,0 +1,212 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="floreria" name="Impuesto vehicular">
+    <mxGraphModel dx="2586" dy="1426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="30" width="99.5" x="290.25" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;whiteSpace=wrap;fontSize=12;html=1;" value="tasa_base = 0.02&lt;br&gt;desc_antiguedad = 0.05&lt;br&gt;desc_electrico = 0.50&lt;br&gt;recargo_comercial = 1.5&lt;br&gt;edad_desc = 10&lt;br&gt;desc_final = 0.05&amp;nbsp;&lt;br&gt;anio_actual = 2026&lt;br&gt;anio_min = 1900&lt;br&gt;impuesto = 0" vertex="1">
+          <mxGeometry height="135" width="300" x="190" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.07142857142857142;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese el año de fabricación:&quot;)&lt;br&gt;Leer anio" vertex="1">
+          <mxGeometry height="40" width="315" x="183" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.08928571428571427;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese el combustible (G, D, E):&quot;)&lt;br&gt;Leer combustible" vertex="1">
+          <mxGeometry height="40" width="340" x="170" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.07142857142857142;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese el uso (P, C):&quot;)&lt;br&gt;Leer uso" vertex="1">
+          <mxGeometry height="40" width="340" x="170" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="dv" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;whiteSpace=wrap;fontSize=13;" value="datos_validos = (valor &gt; 0 and anio &gt;= anio_min AND anio &lt;= anio_actual and (combustible == &#39;g&#39; or combustible == &#39;d&#39; OR combustible == &#39;e&#39;) AND (uso == &#39;p&#39; OR uso == &#39;c&#39;))" vertex="1">
+          <mxGeometry height="75" width="560" x="60.5" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="d0" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="SI datos_validos" vertex="1">
+          <mxGeometry height="100" width="240" x="220" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="err" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.10227272727272727;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Error: datos inválidos. Revise valor, año, combustible y uso.&quot;)" vertex="1">
+          <mxGeometry height="92" width="240" x="610" y="894" as="geometry" />
+        </mxCell>
+        <mxCell id="ev" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;whiteSpace=wrap;fontSize=13;html=1;" value="edad = anio_actual - anio&lt;div&gt;es_antiguo = (edad &amp;gt;= edad_desc) es_electrico = (combustible == &#39;E&#39;)&lt;br&gt;es_comercial = (uso == &#39;C&#39;)&lt;br&gt;impuesto = valor * tasa_base&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="430" x="125.5" y="1027" as="geometry" />
+        </mxCell>
+        <mxCell id="imp" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="impuesto = valor * tasa_base" vertex="1">
+          <mxGeometry height="46" width="380" x="150" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="ev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="imp" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d_ant" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="SI es_antiguo" vertex="1">
+          <mxGeometry height="100" width="240" x="220" y="1184" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="imp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d_ant" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p_ant" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;whiteSpace=wrap;fontSize=13;html=1;" value="mpuesto = impuesto * (1 - desc_antiguedad)" vertex="1">
+          <mxGeometry height="46" width="380" x="150" y="1328" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="d_ant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="p_ant" value="si">
+          <mxGeometry relative="1" x="-0.7273" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="p_ant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="d_ant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0074" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="1234" />
+              <mxPoint x="590" y="1394" />
+            </Array>
+            <mxPoint x="340" y="1394" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="no_ant" parent="1" style="text;html=1;fontSize=13;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;" value="no" vertex="1">
+          <mxGeometry height="20" width="30" x="468" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="d_ele" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="SI es_electrico" vertex="1">
+          <mxGeometry height="100" width="240" x="220" y="1414" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d_ele" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1399" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p_ele" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;whiteSpace=wrap;fontSize=13;html=1;" value="impuesto = impuesto * (1 - desc_electrico)" vertex="1">
+          <mxGeometry height="46" width="380" x="150" y="1558" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="d_ele" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="p_ele" value="si">
+          <mxGeometry relative="1" x="-0.2727" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="p_ele" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="d_ele" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0074" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="1464" />
+              <mxPoint x="590" y="1624" />
+            </Array>
+            <mxPoint x="340" y="1624" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="no_ele" parent="1" style="text;html=1;fontSize=13;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;" value="no" vertex="1">
+          <mxGeometry height="20" width="30" x="468" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="d_com" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="SI es_comercial" vertex="1">
+          <mxGeometry height="100" width="240" x="220" y="1644" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d_com" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1629" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p_com" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="impuesto = impuesto * RECARGO_COMERCIAL" vertex="1">
+          <mxGeometry height="46" width="380" x="150" y="1788" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="d_com" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="p_com" value="si">
+          <mxGeometry relative="1" x="-0.2727" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="p_com" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="d_com" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0074" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="1694" />
+              <mxPoint x="590" y="1854" />
+            </Array>
+            <mxPoint x="340" y="1854" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="no_com" parent="1" style="text;html=1;fontSize=13;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;" value="no" vertex="1">
+          <mxGeometry height="20" width="30" x="468" y="1670" as="geometry" />
+        </mxCell>
+        <mxCell id="fd" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;whiteSpace=wrap;fontSize=13;html=1;" value="impuesto = impuesto * recargo_comercial" vertex="1">
+          <mxGeometry height="46" width="380" x="150" y="1874" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fd" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1859" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pout" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.11931818181818182;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Edad del vehículo: &quot; + edad + &quot; años&quot;)&lt;br&gt;Presentar(&quot;El impuesto vehicular anual es: &quot; + impuesto)" vertex="1">
+          <mxGeometry height="75" width="440" x="120" y="1958" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="fd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pout" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="pout" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="2060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="50" width="180" x="250" y="2073" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="2057.9999999999995" as="sourcePoint" />
+            <mxPoint x="340" y="2073" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Y4dDdvCU9AeGJ-oBLmDE-3" value="">
+          <mxGeometry relative="1" x="-0.2778" as="geometry">
+            <mxPoint x="340" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="l2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="l3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="l4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="dv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="ev" value="si">
+          <mxGeometry relative="1" x="-0.8182" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="err" value="no">
+          <mxGeometry relative="1" x="-0.0685" y="16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="err" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0032" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="2053" />
+            </Array>
+            <mxPoint x="340" y="2053" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y4dDdvCU9AeGJ-oBLmDE-8" edge="1" parent="1" source="Y4dDdvCU9AeGJ-oBLmDE-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="l2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4dDdvCU9AeGJ-oBLmDE-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Presentar(&quot;Ingrese el valor del vehículo:&quot;)&lt;/span&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Leer valor&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="290" x="195" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
