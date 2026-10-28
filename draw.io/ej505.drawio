@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="gimnasio" name="Par y positivo">
+    <mxGraphModel dx="2077" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="30" width="130" x="275" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vVSmgpkBaKFWg0bhlJ0z-7" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="vVSmgpkBaKFWg0bhlJ0z-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="mitad = 0" vertex="1">
+          <mxGeometry height="20" width="130" x="275" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_positivo = (x &gt; 0)" vertex="1">
+          <mxGeometry height="44" width="190" x="245" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_par = (x % 2 == 0)" vertex="1">
+          <mxGeometry height="44" width="180" x="250" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_par_positivo = (es_positivo AND es_par)" vertex="1">
+          <mxGeometry height="44" width="270" x="205" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="d" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_par_positivo?" vertex="1">
+          <mxGeometry height="80" width="180" x="250" y="556" as="geometry" />
+        </mxCell>
+        <mxCell id="mit" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="mitad = x / 2" vertex="1">
+          <mxGeometry height="30" width="170" x="255" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="pf" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07500000000000001;" value="Presentar(&quot;Fin del cálculo.&quot;)" vertex="1">
+          <mxGeometry height="50" width="220" x="230" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="30" width="120" x="280" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ini_init" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_lee_r1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="r1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="340" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_r1_r2" edge="1" parent="1" source="r1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="r2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r2_r3" edge="1" parent="1" source="r2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="r3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r3_d" edge="1" parent="1" source="r3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_m_mit" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="mit" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="680" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_mit_pm" edge="1" parent="1" source="mit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pm_pf" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pf" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="810" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pf_fin" edge="1" parent="1" source="pf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es" edge="1" parent="1" source="d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" value="si">
+          <mxGeometry relative="1" x="-0.3333" y="-16" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="190" y="596" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="en" edge="1" parent="1" source="d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" value="no">
+          <mxGeometry relative="1" x="-0.0164" y="16" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="501.07142857142867" y="596" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="680" />
+            </Array>
+            <mxPoint x="110" y="631" as="sourcePoint" />
+            <mxPoint x="335" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0385" as="geometry">
+            <Array as="points">
+              <mxPoint x="575" y="680" />
+            </Array>
+            <mxPoint x="645" y="631" as="sourcePoint" />
+            <mxPoint x="330" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vVSmgpkBaKFWg0bhlJ0z-1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Presentar(&quot;El número &quot; + x + &quot; NO es par y positivo.&quot;)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="270" x="490" y="571" as="geometry" />
+        </mxCell>
+        <mxCell id="vVSmgpkBaKFWg0bhlJ0z-2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Presentar(&quot;El número &quot; + x + &quot; es par y positivo.&quot;)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="240" x="-42" y="571" as="geometry" />
+        </mxCell>
+        <mxCell id="vVSmgpkBaKFWg0bhlJ0z-9" edge="1" parent="1" source="vVSmgpkBaKFWg0bhlJ0z-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="vVSmgpkBaKFWg0bhlJ0z-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vVSmgpkBaKFWg0bhlJ0z-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Presentar(&quot;¡Bienvenido al gimnasio PowerFit!&quot;)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="245" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="vVSmgpkBaKFWg0bhlJ0z-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Presentar(&quot;La mitad de &quot; + x + &quot; es: &quot; + mitad)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="240" x="220" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="vVSmgpkBaKFWg0bhlJ0z-8" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Presentar(&quot;Ingrese un número entero:&quot;)&lt;/span&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Leer x&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="270" x="205" y="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
