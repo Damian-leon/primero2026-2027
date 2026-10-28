@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="electronica" name="Area del sector circular">
+    <mxGraphModel dx="2327" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="50" width="180" x="250" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="PI = 3.14159&lt;br&gt;FACTOR = 360&lt;br&gt;DIVISOR = 2&lt;br&gt;area_sector = 0&lt;br&gt;area_dividida = 0" vertex="1">
+          <mxGeometry height="86" width="300" x="190" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.1;" value="Presentar(&quot;Ingrese el radio:&quot;)&lt;br&gt;Leer radio" vertex="1">
+          <mxGeometry height="44" width="300" x="190" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07500000000000001;" value="Presentar(&quot;Ingrese el ángulo en grados:&quot;)&lt;br&gt;Leer angulo" vertex="1">
+          <mxGeometry height="50" width="300" x="190" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="eval" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos = (radio &gt; 0 AND angulo &gt; 0)" vertex="1">
+          <mxGeometry height="44" width="380" x="150" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="d" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos?" vertex="1">
+          <mxGeometry height="80" width="180" x="250" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="area_sector = (PI * radio * radio * angulo) / FACTOR" vertex="1">
+          <mxGeometry height="60" width="200" x="10" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="pa1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.11249999999999999;" value="Presentar(&quot;El área del sector es: &quot; + area_sector)" vertex="1">
+          <mxGeometry height="70" width="260" x="-20" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=0;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="area_dividida = area_sector / DIVISOR" vertex="1">
+          <mxGeometry height="30" width="200" x="10" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="pa2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.07500000000000001;" value="Presentar(&quot;El área dividida entre &quot; + DIVISOR + &quot; es: &quot; + area_dividida)" vertex="1">
+          <mxGeometry height="80" width="250" x="-15" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="perr" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;size=0.10714285714285714;" value="Presentar(&quot;Error: el radio y el ángulo deben ser mayores que cero.&quot;)" vertex="1">
+          <mxGeometry height="70" width="210" x="470" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="pfin" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Fin del cálculo.&quot;)" vertex="1">
+          <mxGeometry height="50" width="300" x="190" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="50" width="180" x="250" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ini_init" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_init_l1" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_l1_l2" edge="1" parent="1" source="l1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_l2_eval" edge="1" parent="1" source="l2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="eval" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_eval_d" edge="1" parent="1" source="eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_a1_pa1" edge="1" parent="1" source="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pa1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pa1_a2" edge="1" parent="1" source="pa1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_a2_pa2" edge="1" parent="1" source="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pa2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pfin_fin" edge="1" parent="1" source="pfin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es" edge="1" parent="1" source="d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="a1" value="si">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="en" edge="1" parent="1" source="d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="perr" value="no">
+          <mxGeometry relative="1" x="-0.0164" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j1" edge="1" parent="1" source="pa2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="0.1259" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="800" />
+              <mxPoint x="340" y="800" />
+            </Array>
+            <mxPoint x="340" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j2" edge="1" parent="1" source="perr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=classic;startArrow=none;startFill=0;endFill=1;" value="">
+          <mxGeometry relative="1" x="0.0692" as="geometry">
+            <Array as="points">
+              <mxPoint x="575" y="800" />
+              <mxPoint x="340" y="800" />
+            </Array>
+            <mxPoint x="340" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
