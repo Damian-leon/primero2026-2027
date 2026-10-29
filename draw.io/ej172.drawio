@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="27UKlP7P9k1jWwJRGjnH">
-    <mxGraphModel dx="2381" dy="1313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1807" dy="996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,19 +8,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="inicio" vertex="1">
-          <mxGeometry height="50" width="110" x="369.98" y="88" as="geometry" />
+          <mxGeometry height="50" width="110" x="370.90000000000003" y="100" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-6" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-2" parent="1" style="whiteSpace=wrap;html=1;" value="PESO_COMIDA = 0.5&lt;div&gt;&amp;nbsp;PESO_SERVICIO = 0.3&lt;br&gt;PESO_AMBIENTE = 0.2&lt;/div&gt;&lt;div&gt;&amp;nbsp;MAX_PUNTUACION = 5.0&lt;br&gt;comida = 0&lt;br&gt;servicio = 0&lt;br&gt;ambiente = 0&lt;br&gt;precio_promedio = 0&lt;br&gt;categoria = &quot;na&quot;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="140" width="185.55" x="332.21" y="150" as="geometry" />
+          <mxGeometry height="140" width="185.55" x="333.12" y="170" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-10" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-9" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-5" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="presentar(&quot;ingrese el puntaje de la comida (0 - 5)&quot;)&lt;div&gt;leer comida&lt;/div&gt;&lt;div&gt;presentar(&quot;ingrese el puntaje del servicio (0 - 5)&quot;)&lt;div&gt;leer servicio&lt;/div&gt;&lt;/div&gt;&lt;div&gt;presentar(&quot;ingrese el puntaje del ambiente (0 - 5)&quot;)&lt;div&gt;leer ambiente&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="317.52" x="266.22" y="310" as="geometry" />
+          <mxGeometry height="100" width="317.52" x="267.14000000000004" y="330" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-14" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-13" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -29,34 +29,34 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="SI (datos_validos)" vertex="1">
-          <mxGeometry height="80" width="164.4" x="342.8" y="520" as="geometry" />
+          <mxGeometry height="80" width="164.4" x="342.8" y="538" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-11" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-7" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-9" parent="1" style="whiteSpace=wrap;html=1;" value="datos_valido = (comida &amp;gt;= 0 AND comida &amp;lt;= MAX_PUNTUACION AND servicio &amp;gt;= 0 AND servicio &amp;lt;= MAX_PUNTUACION AND ambiente &amp;gt;= 0 AND ambiente &amp;lt;= MAX_PUNTUACION AND precio_promedio &amp;gt;= 0" vertex="1">
-          <mxGeometry height="70" width="365.02" x="242.49" y="430" as="geometry" />
+          <mxGeometry height="70" width="365.02" x="242.47" y="450" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-20" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-19" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-13" parent="1" style="whiteSpace=wrap;html=1;" value="calificación = (comida * PESO_COMIDA + servicio&lt;br&gt;* PESO_SERVICIO + ambiente * PESO_AMBIENTE)" vertex="1">
-          <mxGeometry height="60" width="290.6" x="280.6" y="620" as="geometry" />
+          <mxGeometry height="60" width="290.6" x="279.68" y="640" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="si" vertex="1">
-          <mxGeometry height="30" width="60" x="410" y="590" as="geometry" />
+          <mxGeometry height="30" width="60" x="414" y="610" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-16" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="presentar(&quot;Error: los datos ingresados son invalidos&quot;)" vertex="1">
-          <mxGeometry height="60" width="240" x="560" y="530" as="geometry" />
+          <mxGeometry height="60" width="240" x="554.05" y="548" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="no" vertex="1">
-          <mxGeometry height="30" width="60" x="507.2" y="538" as="geometry" />
+          <mxGeometry height="30" width="60" x="507.2" y="555" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-26" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-25" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-19" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="presentar(&quot;la calificacion es de&quot; + calificacion)" vertex="1">
-          <mxGeometry height="60" width="276.22" x="286.89" y="700" as="geometry" />
+          <mxGeometry height="40" width="276.22" x="286.89" y="720" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-30" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-29" value="">
           <mxGeometry relative="1" as="geometry" />
