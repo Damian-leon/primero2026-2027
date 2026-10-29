@@ -1,0 +1,289 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="hospital" name="Dia de la semana">
+    <mxGraphModel dx="3750" dy="2068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1800" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="inverso = 0&lt;br&gt;dia_nombre = &quot;Ninguno&quot;" vertex="1">
+          <mxGeometry height="58" width="210" x="335" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lee" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.125;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese un número del 1 al 7:&quot;)&lt;br&gt;Leer numero" vertex="1">
+          <mxGeometry height="58" width="350" x="265" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eval" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="es_uno = (numero == 1)&lt;br&gt;es_dos = (numero == 2)&lt;br&gt;es_tres = (numero == 3)&lt;br&gt;es_cuatro = (numero == 4)&lt;br&gt;es_cinco = (numero == 5)&lt;br&gt;es_seis = (numero == 6)&lt;br&gt;es_siete = (numero == 7)&lt;br&gt;es_valido = (numero &gt;= 1 AND numero &lt;= 7)" vertex="1">
+          <mxGeometry height="134" width="380" x="250" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="d0" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_valido?" vertex="1">
+          <mxGeometry height="100" width="240" x="320" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="err" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.12;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Error: el número debe estar entre 1 y 7.&quot;)" vertex="1">
+          <mxGeometry height="75" width="250" x="20" y="509" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uno" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_uno?" vertex="1">
+          <mxGeometry height="76" width="200" x="340" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="c_uno" value="si">
+          <mxGeometry relative="1" x="-0.3333" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_uno" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.1875;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="dia_nombre = &quot;Lunes&quot;" vertex="1">
+          <mxGeometry height="58" width="200" x="640" y="647" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="c_uno" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="o_uno" value="si">
+          <mxGeometry relative="1" x="-0.6632" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_dos" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_dos?" vertex="1">
+          <mxGeometry height="76" width="200" x="340" y="744" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="c_uno" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="c_dos" value="no">
+          <mxGeometry relative="1" x="-0.6" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_dos" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.11249999999999999;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="dia_nombre = &quot;Martes&quot;" vertex="1">
+          <mxGeometry height="58" width="200" x="630" y="753" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="c_dos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="o_dos" value="si">
+          <mxGeometry relative="1" x="-0.6049" y="-18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_tres" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_tres?" vertex="1">
+          <mxGeometry height="76" width="200" x="340" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="c_dos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="c_tres" value="no">
+          <mxGeometry relative="1" x="-0.3333" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_tres" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.15000000000000002;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="dia_nombre = &quot;Miércoles&quot;" vertex="1">
+          <mxGeometry height="58" width="200" x="630" y="859" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="c_tres" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="o_tres" value="si">
+          <mxGeometry relative="1" x="-0.619" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_cuatro" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_cuatro?" vertex="1">
+          <mxGeometry height="76" width="200" x="340" y="956" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="c_tres" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="c_cuatro" value="no">
+          <mxGeometry relative="1" x="-0.7333" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_cuatro" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.1875;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="dia_nombre = &quot;Jueves&quot;" vertex="1">
+          <mxGeometry height="58" width="200" x="630" y="965" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="c_cuatro" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="o_cuatro" value="si">
+          <mxGeometry relative="1" x="-0.6322" y="-16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_cinco" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_cinco?" vertex="1">
+          <mxGeometry height="76" width="200" x="340" y="1062" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="c_cuatro" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="c_cinco" value="no">
+          <mxGeometry relative="1" x="-0.4667" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_cinco" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.15000000000000002;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="dia_nombre = &quot;Viernes&quot;" vertex="1">
+          <mxGeometry height="58" width="200" x="630" y="1071" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" value="si">
+          <mxGeometry relative="1" x="-0.619" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="540" y="1100" as="sourcePoint" />
+            <mxPoint x="644.9999999999998" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_seis" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_seis?" vertex="1">
+          <mxGeometry height="76" width="200" x="340" y="1168" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="c_cinco" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="c_seis" value="no">
+          <mxGeometry relative="1" x="-0.2" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_seis" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.15000000000000002;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="dia_nombre = &quot;Sábado&quot;" vertex="1">
+          <mxGeometry height="58" width="200" x="630" y="1177" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="c_seis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="o_seis" value="si">
+          <mxGeometry relative="1" x="-0.619" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_siete" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="es_siete?" vertex="1">
+          <mxGeometry height="76" width="200" x="340" y="1274" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" value="no">
+          <mxGeometry relative="1" x="-0.6" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="440" y="1244" as="sourcePoint" />
+            <mxPoint x="440" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_siete" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.15000000000000002;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="dia_nombre = &quot;Domingo&quot;" vertex="1">
+          <mxGeometry height="58" width="200" x="630" y="1283" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="c_siete" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="o_siete" value="si">
+          <mxGeometry relative="1" x="-0.619" y="-8" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="o_uno" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="676" />
+              <mxPoint x="840" y="1386" />
+            </Array>
+            <mxPoint x="445" y="1386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="o_dos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="782" />
+              <mxPoint x="840" y="1386" />
+            </Array>
+            <mxPoint x="445" y="1386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="o_tres" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="888" />
+              <mxPoint x="840" y="1386" />
+            </Array>
+            <mxPoint x="445" y="1386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="o_cuatro" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="994" />
+              <mxPoint x="840" y="1386" />
+            </Array>
+            <mxPoint x="445" y="1386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="o_cinco" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="1100" />
+              <mxPoint x="840" y="1386" />
+            </Array>
+            <mxPoint x="445" y="1386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="o_seis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="1206" />
+              <mxPoint x="840" y="1386" />
+            </Array>
+            <mxPoint x="445" y="1386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="o_siete" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0179" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="1312" />
+              <mxPoint x="840" y="1386" />
+            </Array>
+            <mxPoint x="440" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="c_siete" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=13;labelBackgroundColor=default;endFill=1;" value="no">
+          <mxGeometry relative="1" x="-0.7143" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="440" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pdia" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.1875;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;El día es: &quot; + dia_nombre)" vertex="1">
+          <mxGeometry height="46" width="360" x="260" y="1422" as="geometry" />
+        </mxCell>
+        <mxCell id="di" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="numero != 0?" vertex="1">
+          <mxGeometry height="100" width="240" x="320" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="pdia" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="di" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inv" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="inverso = 1 / numero" vertex="1">
+          <mxGeometry height="46" width="300" x="290" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="di" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="inv" value="si">
+          <mxGeometry relative="1" x="-0.6774" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pinv" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.09782608695652173;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;El inverso multiplicativo de &quot; + numero + &quot; es: &quot; + inverso)" vertex="1">
+          <mxGeometry height="58" width="460" x="210" y="1680" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="inv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pinv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="pinv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pvars" value="">
+          <mxGeometry relative="1" x="-0.4839" as="geometry">
+            <mxPoint x="440" y="1770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="di" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" x="0.0833" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="1540" />
+              <mxPoint x="690" y="1760" />
+              <mxPoint x="440" y="1760" />
+            </Array>
+            <mxPoint x="440" y="1760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="no_di" parent="1" style="text;html=1;fontSize=13;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;" value="no" vertex="1">
+          <mxGeometry height="20" width="30" x="568" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="err" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="0.0333" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="1760" />
+              <mxPoint x="440" y="1760" />
+            </Array>
+            <mxPoint x="440" y="1760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pvars" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.17934782608695654;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;--- Valores de las variables ---&quot;)&lt;br&gt;Presentar(&quot;numero = &quot; + numero)&lt;br&gt;Presentar(&quot;es_uno = &quot; + es_uno)&lt;br&gt;Presentar(&quot;es_dos = &quot; + es_dos)&lt;br&gt;Presentar(&quot;es_tres = &quot; + es_tres)&lt;br&gt;Presentar(&quot;es_cuatro = &quot; + es_cuatro)&lt;br&gt;Presentar(&quot;es_cinco = &quot; + es_cinco)&lt;br&gt;Presentar(&quot;es_seis = &quot; + es_seis)&lt;br&gt;Presentar(&quot;es_siete = &quot; + es_siete)&lt;br&gt;Presentar(&quot;es_valido = &quot; + es_valido)&lt;br&gt;Presentar(&quot;dia_nombre = &quot; + dia_nombre)&lt;br&gt;Presentar(&quot;inverso = &quot; + inverso)" vertex="1">
+          <mxGeometry height="190" width="460" x="210" y="1780" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="1990" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="pvars" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="lee" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="lee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="eval" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="err" value="no">
+          <mxGeometry relative="1" x="-0.0687" y="13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
