@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="27UKlP7P9k1jWwJRGjnH">
-    <mxGraphModel dx="1500" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2381" dy="1313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,13 +8,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="inicio" vertex="1">
-          <mxGeometry height="50" width="110" x="370" y="10" as="geometry" />
+          <mxGeometry height="50" width="110" x="369.98" y="88" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-6" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-2" parent="1" style="whiteSpace=wrap;html=1;" value="PESO_COMIDA = 0.5&lt;div&gt;&amp;nbsp;PESO_SERVICIO = 0.3&lt;br&gt;PESO_AMBIENTE = 0.2&lt;/div&gt;&lt;div&gt;&amp;nbsp;MAX_PUNTUACION = 5.0&lt;br&gt;comida = 0&lt;br&gt;servicio = 0&lt;br&gt;ambiente = 0&lt;br&gt;precio_promedio = 0&lt;br&gt;categoria = &quot;na&quot;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="210" width="185.55" x="332.21" y="80" as="geometry" />
+          <mxGeometry height="140" width="185.55" x="332.21" y="150" as="geometry" />
         </mxCell>
         <mxCell id="f5a94bZoh02-_WTcIjv2-10" edge="1" parent="1" source="f5a94bZoh02-_WTcIjv2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="f5a94bZoh02-_WTcIjv2-9" value="">
           <mxGeometry relative="1" as="geometry" />
