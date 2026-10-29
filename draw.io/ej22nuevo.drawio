@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram id="hospital" name="Dia de la semana">
-    <mxGraphModel dx="2174" dy="1199" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1800" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="1807" dy="996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1800" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
-          <mxGeometry height="40" width="150" x="365" y="120" as="geometry" />
+          <mxGeometry height="40" width="150" x="365" y="121" as="geometry" />
         </mxCell>
         <mxCell id="init" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="inverso = 0&lt;br&gt;dia_nombre = &quot;Ninguno&quot;" vertex="1">
           <mxGeometry height="58" width="210" x="335" y="180" as="geometry" />
