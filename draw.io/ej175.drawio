@@ -1,0 +1,169 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="vendedor" name="Salario del vendedor">
+    <mxGraphModel dx="2586" dy="1426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1800" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="COMISION_BASE = 0.05&lt;br&gt;BONO_J = 0.02&lt;br&gt;BONO_S = 0.05&lt;br&gt;BONO_M = 0.10&lt;br&gt;META = 10000&lt;br&gt;bono = 0" vertex="1">
+          <mxGeometry height="106" width="320" x="280" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="lee" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.135;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese el salario base:&quot;)&lt;br&gt;Leer salario_base&lt;br&gt;Presentar(&quot;Ingrese el monto de ventas:&quot;)&lt;br&gt;Leer monto_ventas&lt;br&gt;Presentar(&quot;Ingrese el número de productos vendidos:&quot;)&lt;br&gt;Leer productos&lt;br&gt;Presentar(&quot;Ingrese la categoría (J, S, M):&quot;)&lt;br&gt;Leer categoria" vertex="1">
+          <mxGeometry height="126" width="500" x="190" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="dv" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos = (salario_base &gt; 0 AND monto_ventas &gt;= 0 AND productos &gt;= 0 AND (categoria == &#39;J&#39; OR categoria == &#39;S&#39; OR categoria == &#39;M&#39;))" vertex="1">
+          <mxGeometry height="58" width="540" x="170" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="d0" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos?" vertex="1">
+          <mxGeometry height="100" width="240" x="320" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="err" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.12;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Error: datos inválidos. Revise salario, ventas, productos y categoría.&quot;)" vertex="1">
+          <mxGeometry height="92" width="250" x="20" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="sup" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="supera_meta = (monto_ventas &gt;= META)&lt;br&gt;comision = monto_ventas * COMISION_BASE" vertex="1">
+          <mxGeometry height="58" width="400" x="240" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="dm" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="supera_meta?" vertex="1">
+          <mxGeometry height="100" width="240" x="320" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="b0" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="bono = 0" vertex="1">
+          <mxGeometry height="46" width="220" x="660" y="827" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="sup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dm" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="sup" value="si">
+          <mxGeometry relative="1" x="-0.7143" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="dm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="b0" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dj" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="categoria == &#39;J&#39;?" vertex="1">
+          <mxGeometry height="80" width="280" x="300" y="942" as="geometry" />
+        </mxCell>
+        <mxCell id="oj" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="bono = monto_ventas * BONO_J" vertex="1">
+          <mxGeometry height="58" width="220" x="660" y="953" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="dm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="dj" value="si">
+          <mxGeometry relative="1" x="-0.5238" y="30" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="dj" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="oj" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ds" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="categoria == &#39;S&#39;?" vertex="1">
+          <mxGeometry height="80" width="280" x="300" y="1054" as="geometry" />
+        </mxCell>
+        <mxCell id="os" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="bono = monto_ventas * BONO_S" vertex="1">
+          <mxGeometry height="58" width="220" x="660" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="dj" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="ds" value="no">
+          <mxGeometry relative="1" x="-0.5" y="30" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="ds" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="os" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="om" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="bono = monto_ventas * BONO_M" vertex="1">
+          <mxGeometry height="46" width="340" x="270" y="1166" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="ds" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="om" value="no">
+          <mxGeometry relative="1" x="-0.625" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="om" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="b0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="850" />
+              <mxPoint x="900" y="1234" />
+            </Array>
+            <mxPoint x="445" y="1234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="oj" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="982" />
+              <mxPoint x="900" y="1234" />
+            </Array>
+            <mxPoint x="445" y="1234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="os" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0128" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="1094" />
+              <mxPoint x="900" y="1234" />
+            </Array>
+            <mxPoint x="440" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tot" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="salario_total = salario_base + comision + bono&lt;br&gt;descuento5 = salario_total * 0.05&lt;br&gt;salario_final = salario_total - descuento5" vertex="1">
+          <mxGeometry height="75" width="440" x="220" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="tot" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1239" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pout" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.125;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;--- Detalle del salario ---&quot;)&lt;br&gt;Presentar(&quot;Productos vendidos: &quot; + productos)&lt;br&gt;Presentar(&quot;Categoría: &quot; + categoria)&lt;br&gt;Presentar(&quot;Salario base: &quot; + salario_base)&lt;br&gt;Presentar(&quot;Comisión: &quot; + comision)&lt;br&gt;Presentar(&quot;Bono: &quot; + bono)&lt;br&gt;Presentar(&quot;Salario total: &quot; + salario_total)&lt;br&gt;Presentar(&quot;Descuento 5%: &quot; + descuento5)&lt;br&gt;Presentar(&quot;Salario final: &quot; + salario_final)" vertex="1">
+          <mxGeometry height="160" width="420" x="230" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="tot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pout" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="pout" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="err" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="0.0128" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="1540" />
+              <mxPoint x="440" y="1540" />
+            </Array>
+            <mxPoint x="440" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1520" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="lee" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="lee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="dv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="err" value="no">
+          <mxGeometry relative="1" x="-0.3846" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
