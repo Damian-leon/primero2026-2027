@@ -1,0 +1,195 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="hotel" name="Costo del cable">
+    <mxGraphModel dx="2586" dy="1426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1800" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="bien" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.046875;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;¡Bienvenido al Hotel Mirador! Calcule aquí el costo de su servicio de cable.&quot;)" vertex="1">
+          <mxGeometry height="38" width="480" x="200" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="PRECIO_B = 25.0&lt;br&gt;PRECIO_E = 45.0&lt;br&gt;PRECIO_P = 70.0&lt;br&gt;COSTO_PREMIUM = 5.0&lt;br&gt;COSTO_TV_EXTRA = 3.0&lt;br&gt;TV_INCLUIDOS = 2&lt;br&gt;precio_base = 0&lt;br&gt;tv_extra = 0" vertex="1">
+          <mxGeometry height="130" width="360" x="260" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="lee" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.15625;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese la cantidad de canales premium:&quot;)&lt;br&gt;Leer canales_premium&lt;br&gt;Presentar(&quot;Ingrese el tipo de plan (B, E, P):&quot;)&lt;br&gt;Leer tipo_plan&lt;br&gt;Presentar(&quot;Ingrese el número de televisores:&quot;)&lt;br&gt;Leer num_tv" vertex="1">
+          <mxGeometry height="106" width="480" x="200" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="dv" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos = (canales_premium &gt;= 0 AND num_tv &gt;= 1 AND (tipo_plan == &#39;B&#39; OR tipo_plan == &#39;E&#39; OR tipo_plan == &#39;P&#39;))" vertex="1">
+          <mxGeometry height="58" width="520" x="180" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d0" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos?" vertex="1">
+          <mxGeometry height="100" width="240" x="320" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="err" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.12;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Error: datos inválidos. Revise canales, plan y televisores.&quot;)" vertex="1">
+          <mxGeometry height="92" width="250" x="40" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="tipo_plan == &#39;B&#39;?" vertex="1">
+          <mxGeometry height="80" width="280" x="300" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="ob" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.17045454545454544;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="precio_base = PRECIO_B" vertex="1">
+          <mxGeometry height="58" width="220" x="660" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="db" value="si">
+          <mxGeometry relative="1" x="-1" y="30" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="ob" value="si">
+          <mxGeometry relative="1" x="-0.1899" y="-10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="de" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="tipo_plan == &#39;E&#39;?" vertex="1">
+          <mxGeometry height="80" width="280" x="300" y="912" as="geometry" />
+        </mxCell>
+        <mxCell id="oe" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.17045454545454544;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="precio_base = PRECIO_E" vertex="1">
+          <mxGeometry height="58" width="220" x="660" y="923" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="de" value="no">
+          <mxGeometry relative="1" x="-0.375" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="de" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="oe" value="si">
+          <mxGeometry relative="1" x="-0.1899" y="-8" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pp" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="precio_base = PRECIO_P" vertex="1">
+          <mxGeometry height="46" width="300" x="290" y="1024" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="de" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="pp" value="no">
+          <mxGeometry relative="1" x="-0.5" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="pp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="ob" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="840" />
+              <mxPoint x="900" y="1092" />
+            </Array>
+            <mxPoint x="444.9999999999998" y="1092" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0074" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="952" />
+              <mxPoint x="900" y="1092" />
+            </Array>
+            <mxPoint x="861.25" y="952" as="sourcePoint" />
+            <mxPoint x="440" y="1092" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dt" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="num_tv &gt; TV_INCLUIDOS?" vertex="1">
+          <mxGeometry height="100" width="340" x="270" y="1128" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="tv_extra = 0" vertex="1">
+          <mxGeometry height="46" width="220" x="660" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1097" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="dt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="t0" value="no">
+          <mxGeometry relative="1" x="-0.2" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="tv_extra = num_tv - TV_INCLUIDOS" vertex="1">
+          <mxGeometry height="46" width="320" x="280" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="dt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="t1" value="si">
+          <mxGeometry relative="1" x="-0.4286" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="t0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0107" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="1338" />
+            </Array>
+            <mxPoint x="440" y="1338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cp" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="costo_tv = tv_extra * COSTO_TV_EXTRA&lt;br&gt;costo_premium = canales_premium * COSTO_PREMIUM" vertex="1">
+          <mxGeometry height="46" width="420" x="230" y="1363" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="cp" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1343" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ct" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="costo_total = precio_base + costo_premium + costo_tv" vertex="1">
+          <mxGeometry height="30" width="420" x="230" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="cp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ct" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ds" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="descuento5 = costo_total * 0.05&lt;br&gt;costo_final = costo_total - descuento5" vertex="1">
+          <mxGeometry height="40" width="380" x="250" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="ct" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ds" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pout" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.1607142857142857;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;--- Desglose del costo mensual ---&quot;)&lt;br&gt;Presentar(&quot;Plan base: &quot; + precio_base)&lt;br&gt;Presentar(&quot;Canales premium: &quot; + costo_premium)&lt;br&gt;Presentar(&quot;Televisores extra: &quot; + costo_tv)&lt;br&gt;Presentar(&quot;Costo total: &quot; + costo_total)&lt;br&gt;Presentar(&quot;Descuento 5%: &quot; + descuento5)&lt;br&gt;Presentar(&quot;Costo final mensual: &quot; + costo_final)" vertex="1">
+          <mxGeometry height="130" width="420" x="230" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="ds" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pout" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="pout" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="err" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="0.0846" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="1690" />
+              <mxPoint x="440" y="1690" />
+            </Array>
+            <mxPoint x="440" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="40" width="130" x="375" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="bien" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="bien" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="lee" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="lee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="dv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="err" value="no">
+          <mxGeometry relative="1" x="-0.0769" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
