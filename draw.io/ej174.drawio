@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="gasolinera" name="Control de acceso">
+    <mxGraphModel dx="1250" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1800" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="inicio" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="HORA_ENTRADA = 6&lt;br&gt;HORA_SALIDA = 18&lt;br&gt;DIAS_LABORALES = 5&lt;br&gt;CUOTA_ACCESO = 10.0&lt;br&gt;cuota_final = 0" vertex="1">
+          <mxGeometry height="85" width="320" x="280" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="lee" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.09375;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Ingrese el código de usuario:&quot;)&lt;br&gt;Leer codigo&lt;br&gt;Presentar(&quot;Ingrese la hora de acceso (0 - 23):&quot;)&lt;br&gt;Leer hora&lt;br&gt;Presentar(&quot;Ingrese el día (1 a 7):&quot;)&lt;br&gt;Leer dia&lt;br&gt;Presentar(&quot;Ingrese el tipo de usuario (A, E, V):&quot;)&lt;br&gt;Leer tipo_usuario" vertex="1">
+          <mxGeometry height="137" width="480" x="200" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="dn" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="dia_num = dia - &#39;0&#39;" vertex="1">
+          <mxGeometry height="36" width="210" x="335" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="dv" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos = (codigo &gt; 0 AND hora &gt;= 0 AND hora &lt;= 23 AND dia_num &gt;= 1 AND dia_num &lt;= 7 AND (tipo_usuario == &#39;A&#39; OR tipo_usuario == &#39;E&#39; OR tipo_usuario == &#39;V&#39;))" vertex="1">
+          <mxGeometry height="75" width="540" x="170" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d0" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="datos_validos?" vertex="1">
+          <mxGeometry height="100" width="240" x="320" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="err1" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="acceso_permitido = falso" vertex="1">
+          <mxGeometry height="58" width="200" x="20" y="721" as="geometry" />
+        </mxCell>
+        <mxCell id="err2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.15000000000000002;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Error: datos inválidos. Revise código, hora, día y tipo.&quot;)" vertex="1">
+          <mxGeometry height="109" width="200" x="20" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="eh" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="en_horario = (hora &gt;= HORA_ENTRADA AND hora &lt; HORA_SALIDA)&lt;br&gt;es_laboral = (dia_num &lt;= DIAS_LABORALES)" vertex="1">
+          <mxGeometry height="75" width="400" x="240" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="ea" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="acceso_permitido = (tipo_usuario == &#39;A&#39;) OR (tipo_usuario == &#39;E&#39; AND en_horario) OR (tipo_usuario == &#39;V&#39; AND en_horario AND es_laboral)" vertex="1">
+          <mxGeometry height="58" width="540" x="170" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="da" parent="1" style="rhombus;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="acceso_permitido?" vertex="1">
+          <mxGeometry height="100" width="280" x="300" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="den" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.23863636363636365;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Acceso DENEGADO&quot;)" vertex="1">
+          <mxGeometry height="58" width="220" x="660" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="ds" parent="1" style="rounded=0;fillColor=none;spacingLeft=6;spacingRight=6;html=1;whiteSpace=wrap;fontSize=13;" value="descuento5 = CUOTA_ACCESO * 0.05&lt;br&gt;cuota_final = CUOTA_ACCESO - descuento5" vertex="1">
+          <mxGeometry height="58" width="380" x="250" y="1141" as="geometry" />
+        </mxCell>
+        <mxCell id="pp" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.1607142857142857;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;Acceso PERMITIDO&quot;)&lt;br&gt;Presentar(&quot;Cuota de acceso: &quot; + CUOTA_ACCESO)&lt;br&gt;Presentar(&quot;Descuento 5%: &quot; + descuento5)&lt;br&gt;Presentar(&quot;Cuota final: &quot; + cuota_final)" vertex="1">
+          <mxGeometry height="92" width="420" x="230" y="1235" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="pp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.4545" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="1340" />
+              <mxPoint x="440" y="1340" />
+            </Array>
+            <mxPoint x="440" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="den" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;endArrow=none;" value="">
+          <mxGeometry relative="1" x="-0.0245" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="1351" />
+            </Array>
+            <mxPoint x="430" y="1351" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="err2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="1351" />
+            </Array>
+            <mxPoint x="435" y="1351" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conc" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixed=1;size=0.14673913043478262;fillColor=none;spacingLeft=12;spacingRight=12;html=1;whiteSpace=wrap;fontSize=13;" value="Presentar(&quot;CONCLUSIONES &quot;)&lt;br&gt;Presentar(&quot;Usuario: &quot; + codigo + &quot; (tipo &quot; + tipo_usuario + &quot;)&quot;)&lt;br&gt;Presentar(&quot;Hora: &quot; + hora + &quot;, día: &quot; + dia)&lt;br&gt;Presentar(&quot;Acceso permitido: &quot; + acceso_permitido)&lt;br&gt;Presentar(&quot;Cuota final: &quot; + cuota_final)" vertex="1">
+          <mxGeometry height="126" width="460" x="210" y="1387" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;fillColor=none;html=1;whiteSpace=wrap;fontSize=13;" value="fin" vertex="1">
+          <mxGeometry height="47" width="120" x="380" y="1533" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="conc" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1356" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="conc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="da" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="ds" value="si">
+          <mxGeometry relative="1" x="-0.4762" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="da" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="den" value="no">
+          <mxGeometry relative="1" x="-0.0588" y="-11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="ds" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pp" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="lee" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="lee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="dn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="dv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="eh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ea" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="ea" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="da" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=13;labelBackgroundColor=default;" target="eh" value="si">
+          <mxGeometry relative="1" x="-0.8095" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=13;labelBackgroundColor=default;" target="err1" value="no">
+          <mxGeometry relative="1" x="-0.2" y="-16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="err1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="err2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
