@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="nf7V5IaVcujnFjovkBeC">
+    <mxGraphModel dx="715" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c3p6PXW5lTTr48TKywTc-4" edge="1" parent="1" source="c3p6PXW5lTTr48TKywTc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="c3p6PXW5lTTr48TKywTc-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="inicio&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="390" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-6" edge="1" parent="1" source="c3p6PXW5lTTr48TKywTc-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="c3p6PXW5lTTr48TKywTc-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-3" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;div&gt;c1 = 0.0&lt;/div&gt;&lt;div&gt;c2 = 0.0&lt;/div&gt;&lt;div&gt;c3 = 0.0&amp;nbsp;&lt;/div&gt;&lt;div&gt;nc = 0.60&lt;br&gt;nl = 0.0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="370" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-8" edge="1" parent="1" source="c3p6PXW5lTTr48TKywTc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="c3p6PXW5lTTr48TKywTc-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-5" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="leer c1&lt;br&gt;leer c2&lt;div&gt;leer nl&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-10" edge="1" parent="1" source="c3p6PXW5lTTr48TKywTc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="c3p6PXW5lTTr48TKywTc-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-7" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;div&gt;c3 = 3 * nc – c1 – c2&lt;/div&gt;&lt;div&gt;nf = (nc * 0.70) + (nl * 0.3)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="213.75" x="323.12" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c3p6PXW5lTTr48TKywTc-9" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="presentar(&quot;Nota minima para c3 es: &quot; + c3 &quot;para aprobar con 60/100 puntos&quot;)" vertex="1">
+          <mxGeometry height="100" width="200" x="329.99" y="450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
